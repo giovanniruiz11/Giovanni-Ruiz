@@ -1,109 +1,21 @@
-body{
-  overflow: hidden;
-  margin: 0;
-  background:black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/nucleus_thumbnail.jpg) center / cover;
+svg, html, body  {
+  box-sizing: border-box;
+  height:100%;
+  width:100%;
+  padding:0;
+  margin:0;
+  background-image: radial-gradient(circle,rgb(0, 34, 35),black);
 }
-*{box-sizing:border-box;}
 
-canvas{
-  transition: filter 0.4s ease-out;
-  &.blurry{
-    pointer-events:none;
-    filter: blur(4px);
-  }
-}
-.home{
-  position: fixed;
-  top: 50%;
-  left: calc(50% - 300px);
-  transform: translateY(-50%);
-  width:600px;
-  border:1px solid #ccc;
-  background: rgba(0,0,0,0.9);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding:20px;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 100;
-  font-size: 15px;
-  line-height: 1.4;
-  transition: 0.4s ease-out;
-}
-a{
-  color: white;
-  border-bottom: 1px solid white;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 10px;
-}
-.start{
-  border:1px solid white;
-  background:none;
-  color: white;
-  padding:10px 15px;
-  font-family: 'Quicksand', sans-serif;
-  margin:10px 0;
-  font-size: 18px;
-  cursor: pointer;
+circle {
+  fill: white;
   position: relative;
-  transition:0.3s ease-out;
-  overflow: hidden;
-  &:before{
-    content:"";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height:100%;
-    background:white;
-    transform: rotate(90deg);
-    transform-origin: 100% 100%;
-    transition:transform 0.3s ease-in;
-    z-index:-1;
-  }
-  &:hover{
-    color:black;
-    &:before{
-      transform: rotate(0);
-    transition:transform 0.3s ease-out;
-      transform-origin: 0% 0%;
-    }
-  }
-}
-p{
-  margin: 0 0 10px 0;
-}
-.home.hidden{
-  opacity:0;
-  visibility:hidden;
+  z-index: 100;
 }
 
-@media (max-width: 650px){
-  .home{
-    width: calc(100% - 24px);
-    left:12px;
-    top: 12px;
-    transform:none;
-    position: absolute;
-    max-height: calc(100% - 24px);
-    overflow:auto;
-    display: block;
-  }
-}
-
-.about{
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  color:white;
-  border:none;
-  background:none;
-  font-size: 24px;
-  font-family: 'Quicksand', sans-serif;
-  cursor: pointer;
-  padding: 0px 5px;
-  border-bottom: 1px solid white;
+line {
+  stroke: rgba(0,255,255,0.05);
+  stroke-width: 1;
+  position: relative;
+  z-index:0;
 }
