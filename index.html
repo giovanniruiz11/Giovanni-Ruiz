@@ -13,7 +13,38 @@
 	<body background="w3s.png">
 		<p>Giovanni Ruiz</p>
 		<a href="https://docs.google.com/document/d/1L6aPEk27d3H3dx-TJVkJaP3g-ubhIAinG9RQ5TCqRuI/edit">My Database</a>
-		<svg id="svg"></svg>
+		<canvas></canvas>
+<button class="about">About</button>
+<div class="home hidden">
+  <div>
+    <p>
+      Welcome to an experimental world.
+    </p>
+    <p>
+      Lose yourself by clicking on the coloured spheres to get a new point of view.
+      <br> Return to your initial position by clicking anywhere in the darkness.
+    </p>
+    <p>
+      This experiment can be seen on both mobile and desktop. You can control the camera with your phone or tablet, I suggest you to try it for fun.
+    </p>
+    <p>
+      Thanks to <a target="_blank" href="https://twitter.com/Alex_Tournay">Alexandre Tournay</a> for his precious advice.
+    </p>
+    <p>
+      The main technology for this is <a target="_blank" href="https://threejs.org/">ThreeJs</a> for the WebGL and <a target="_blank" href="https://greensock.com/">GSAP</a> for all the transitions. Miscellaneous plugins for shaders and specific features can be found in the settings of this pen. 
+    </p>
+    <p>
+      <button class="start">Start your journey</button>
+    </p>
+    <a target="_blank" href="https://twitter.com/Mamboleoo">Mamboleoo</a>
+  </div>
+</div>
+<script type="x-shader/x-vertex" id="wrapVertexShader">
+  attribute float size; attribute float opacity; varying float vOpacity; void main() { vOpacity = opacity; vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 ); gl_PointSize = size; gl_Position = projectionMatrix * mvPosition; }
+</script>
+<script type="x-shader/x-fragment" id="wrapFragmentShader">
+  varying float vOpacity; uniform sampler2D texture; void main(){ vec4 color = vec4( 1.0,1.0,1.0, vOpacity) * texture2D( texture, gl_PointCoord ); gl_FragColor = color; }
+</script>
 	</body>
    
 </html>
