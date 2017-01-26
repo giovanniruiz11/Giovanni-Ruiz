@@ -21,7 +21,7 @@ var dotRandomMax = .1;
 var mouseMoving = false;
 var mouse = {};
     mouse.distances = [];
-    mouse.power = 5;
+    mouse.power = 10;
 
 
 
