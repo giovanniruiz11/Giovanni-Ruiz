@@ -4,7 +4,7 @@
 
 
 
-var svg = document.getElementById("svg");
+var svg = document.getElementById('svg');
 var dotMatrix = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
 var dots = [];
 var lineMatrix = document.createElementNS("http://www.w3.org/2000/svg", 'line');
@@ -16,12 +16,12 @@ var screenW;
 var screenH;
 var dotColumns;
 var dotRows;
-var dotRandomMax = 2;
+var dotRandomMax = .1;
 
 var mouseMoving = false;
 var mouse = {};
     mouse.distances = [];
-    mouse.power = 10;
+    mouse.power = 5;
 
 
 
