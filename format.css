@@ -4,11 +4,11 @@ svg, html, body  {
   width:100%;
   padding:0;
   margin:0;
-  background-image: radial-gradient(circle,rgb(, 34, 35),white);
+  background-image: radial-gradient(circle,rgb(, 34, 35),black);
 }
 
 circle {
-  fill: black;
+  fill: white;
   position: relative;
   z-index: 100;
 }
