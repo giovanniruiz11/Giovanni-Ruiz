@@ -4,7 +4,7 @@ svg, html, body  {
   width:100%;
   padding:0;
   margin:0;
-  background-image: radial-gradient(circle,rgb(, 34, 35),black);
+  background-image: radial-gradient(circle,rgb(0, 3, 25),black);
 }
 
 circle {
@@ -14,7 +14,7 @@ circle {
 }
 
 line {
-  stroke: rgba(0,255,255,0.19);
+  stroke: rgba(0,255,255,0.05);
   stroke-width: 1;
   position: relative;
   z-index:0;
