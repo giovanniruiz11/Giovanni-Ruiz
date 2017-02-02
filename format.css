@@ -24,8 +24,8 @@ body {
 }
 
 .weekplanner {
-  width: 80%;
-  margin-left: auto;
+  width: 60%;
+  margin-left: -75%;
   margin-right: auto;
   background-color: ghostwhite;
   border: 5px solid black;
