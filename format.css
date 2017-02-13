@@ -23,13 +23,6 @@ body {
   background-image: url(http://cbien.co/wp-content/uploads/2016/09/unique-white-marble-background-5.jpg);
 }
 
-.weekplanner {
-  width: auto;
-  margin-left: -75%;
-  margin-right: auto;
-  border: 5px solid #ffffff;
-  margin-top: -3%;
-}
 h1 {
   font-family: 'Libre Franklin', sans-serif;
   text-align: center;
@@ -123,3 +116,15 @@ h2, .marker {
   0%, 20% { transform: translateX(0); }
   50%, 70% { transform: translateX(337rem); }
 }
+.weekplanner {
+  width: auto;
+  margin-left: -75%;
+  margin-right: auto;
+  border: 5px solid #ffffff;
+  margin-top: -3%;
+}
+/*This code is for the box in the middle of my website. The first line indicates how wide it'll be 
+i set it to auton because measurments might crop out some letters or might be too big. The second line 
+the box over the background to the left about 75% putting it in the center. The third line does the same
+as the second line exept that it moves to he right rather than left. The 4th line is the color of the outline
+of the box so "#ffffff" is hex for white.*/ 
